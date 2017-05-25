@@ -1,0 +1,92 @@
+{
+    "name": "misfist/rockerradio-packages",
+    "description": "WordPress packages for Rocker Radio website",
+    "type": "wordpress-project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Pea",
+            "email": "pea@misfist.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/rr-core-functionality",
+                "version": "master",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/rr-core-functionality/archive/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/misfist/rr-core-functionality.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/advanced-custom-fields-pro",
+                "version": "5.5.14",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/advanced-custom-fields/archive/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/misfist/advanced-custom-fields.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/admin-columns-pro",
+                "version": "master",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/admin-columns/archive/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/misfist/admin-columns.git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/codepress-admin-columns": "2.5.6.4",
+        "misfist/advanced-custom-fields-pro": "5.5.14",
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "^4.9.3.2",
+        "wpackagist-plugin/jetpack": "^4.9",
+        "wpackagist-plugin/post-type-archive-links": "^1.3.1",
+        "misfist/rr-core-functionality": "dev-master"
+    },
+    "require-dev": {
+        "wpackagist-plugin/developer": "^1.2.5",
+        "wpackagist-plugin/user-switching": "^1.0.9",
+        "wpackagist-plugin/wordpress-importer": "^0.6.3",
+        "wpackagist-plugin/wp-log-viewer": "^1.0.7",
+        "phpdocumentor/phpdocumentor": "^v2.9.0",
+        "phpunit/phpunit": "4.8.*"
+    },
+    "extra": {
+        "installer-paths": {
+            "../wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "../wordpress/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}
