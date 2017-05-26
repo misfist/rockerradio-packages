@@ -82,11 +82,29 @@
                     "reference": "master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "strickdj/acf-field-address",
+                "version": "master",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/strickdj/acf-field-address/archive/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/strickdj/acf-field-address.git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
         "wpackagist-plugin/codepress-admin-columns": "2.5.6.4",
         "misfist/advanced-custom-fields-pro": "5.5.14",
+        "strickdj/acf-field-address": "dev-master",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "^4.9.3.2",
         "wpackagist-plugin/jetpack": "^4.9",
         "wpackagist-plugin/post-type-archive-links": "^1.3.1",
